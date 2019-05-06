@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>API Project: File MetaData Microsercice </h1>
+    <h2>User Stories:</h2>
+     <div class="story">
+       <ol>
+         <li>1. I can submit a form object that includes a file upload.</li>
+         <li>2. The from file input field has the "name" attribute set to "upfile". We rely on this in testing.</li>
+         <li>3. When I submit something, I will receive the file name, and size in bytes within the JSON response.</li>
+       </ol>
+       <div class="usage">
+         <h2>Usage:</h2>
+         <p>Please upload file....</p>
+       </div>
+
+       <div class="upload">
+         <form action="/api/upload/" method="POST" enctype="multipart/form-data">
+          <input type="file" name="myfile" />
+          <br>
+        <button class="btn" type="submit">Upload file</button>
+        
+        </form>
+       </div>
+       <div class="owner">
+         <a href="https://github.com/imkrish7">By Krishna</a>
+       </div>
+     </div>
+
+  </body>
+</html>
