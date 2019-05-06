@@ -14,32 +14,33 @@ a,li,p{
   font-size:20px;
 }
 .btn{
-  /* cursor: pointer; */
+  
   text-transform: uppercase;
-  margin:10px; 
+  margin:25px; 
   height:55px;
   width:200px;
   font-size: 20px;
   color:#fff;
   background:#ad1f36;
   border:none;
-  /* border-radius: 5px; */
   box-shadow: 1px 2px 2px 1px #9da0a2;
 }
 .upload{
   position: relative;
   overflow: hidden;
   display: inline-block;
-  border: 1px solid #fff;
 }
-input[type=file]{
-  box-sizing: content-box;
-  left:0;
-  top:0;
-  opacity: 1;
+.custome-input-btn{
+  width:300px;
+  font-size:20px;
+  box-shadow:0px 1px 0px 0px #9da0a2;
 }
-button:hover{
-  background:#7a0909;
+
+.custome-input-btn::-webkit-file-upload-button{
+border:none;
+height:40px;
+background:#ad1f36;
+  color:#fff;
 }
 a {
   color: #00B7FF;
